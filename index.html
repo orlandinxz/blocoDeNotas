@@ -1,20 +1,51 @@
+<!-- /index.html -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloco de Notas Moderno</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloco de Notas Moderno</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="background">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
 
-    <div class="container">
-        <h1>Meu Bloco de Notas</h1>
-        <p>Suas anotações são salvas automaticamente no seu navegador.</p>
-        
-        <textarea id="blocoDeNotas" placeholder="Comece a digitar aqui..."></textarea>
-    </div>
+  <main class="container">
+    <section class="card">
+      <h1>Meu Grandioso Bloco de Notas</h1>
+      <p class="subtitle">
+        Suas anotações são salvas automaticamente no navegador enquanto você digita.
+      </p>
 
-    <script src="script.js"></script>
+      <div class="toolbar">
+        <span class="status">
+          <span class="status-dot"></span>
+          Salvamento automático ativo
+        </span>
+
+        <button id="btnLimpar" class="btn-limpar" type="button">
+          Limpar nota
+        </button>
+      </div>
+
+      <div class="textarea-wrapper">
+        <textarea
+          id="blocoDeNotas"
+          placeholder="Comece a digitar aqui..."
+        ></textarea>
+      </div>
+
+      <div class="footer-info">
+        <span id="contadorCaracteres">0 caracteres</span>
+        <span class="hint">De Orlando macedo para o professor Jóedio</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
